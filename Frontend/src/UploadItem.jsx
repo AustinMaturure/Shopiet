@@ -100,7 +100,7 @@ const UploadItem = () => {
             return;
         }
 
-        if (formData.address){
+        if (!formData.address){
             setMessage('Please select a City');
             setErrorBorder('errorb');
             return;
