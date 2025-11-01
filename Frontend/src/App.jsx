@@ -24,6 +24,7 @@ function App() {
         
         if (response.status === 200){
           setData(jsonData);
+          console.log(jsonData);
         }else if(response.statusText === 'Error Fetching Data, please try again later :-/')
         console.log(jsonData)
       } catch (error) {
